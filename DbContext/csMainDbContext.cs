@@ -12,9 +12,9 @@ namespace DbContext;
 public class csMainDbContext : Microsoft.EntityFrameworkCore.DbContext
 {
     #region class - Table mapping
-    public DbSet<csFriend> Friends { get; set; }
-    public DbSet<csAdress> Adress { get; set; }
-    public DbSet<csPet> Pets { get; set; }
+    public DbSet<csMusicGroup> MusicGroups { get; set; }
+    public DbSet<csArtist> Artists { get; set; }
+    public DbSet<csAlbum> Albums { get; set; }
     #endregion
 
     #region get right DBContext from DbSet configuration in Appsettings

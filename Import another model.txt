@@ -5,9 +5,8 @@
 
 2. Setup your database connections in appsettings.json in projects AppConsole and DbContext
 
-
 3. Import you models, In project Models,
-  - add your own models
+  - add your own models and make sure the namespace is Models.
   - recompile should be OK
 
 4. Set you primary Keys in the models
