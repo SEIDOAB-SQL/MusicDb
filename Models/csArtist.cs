@@ -12,6 +12,7 @@ namespace Models
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public DateTime? BirthDay { get; set; }
         
         //Navigation property many-to-many
 		public List<csMusicGroup>  MusicGroups { get; set; }
@@ -27,6 +28,7 @@ namespace Models
 
                 FirstName = _seeder.FirstName,
                 LastName = _seeder.LastName,
+                BirthDay = _seeder.DateAndTime(1940, 2020),
     
                 Seeded = true
             };

@@ -12,6 +12,7 @@ namespace Models
 
         public string Name { get; set; }
 		public int ReleaseYear { get; set; }
+        public int CopiesSold { get; set;}
 
         //Navigation property one-to-one
 		public csMusicGroup  MusicGroups { get; set; }
@@ -27,6 +28,7 @@ namespace Models
 
                 Name = _seeder.MusicAlbumName,
                 ReleaseYear = _seeder.Next(1970, 1990),
+                CopiesSold = _seeder.Next(10, 10_000_000),
     
                 Seeded = true
             };
